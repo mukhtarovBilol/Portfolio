@@ -24,7 +24,7 @@ img {
 }
 
 .container {
-    max-width: 1500px;
+    max-width: 1240px;
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
@@ -275,17 +275,17 @@ img {
     padding-bottom: 20%;
     max-width: 630px;
     width: 100%;
-    height: 400px;
+    max-height: 630px;
     object-fit: cover;
-    border-radius: 10%;
+    border-radius: 5%;
 }
 
 .img {
     max-width: 500px;
     width: 100%;
     object-fit: cover;
-    border-radius: 10%;
-    height: 500px;
+    border-radius: 5%;
+    max-height: 500px;
 }
 
 .about-txt h2 {
@@ -363,6 +363,11 @@ img {
     margin-bottom: 15px;
 }
 
+.services-list div h2:nth-of-type(2) {
+    text-align: left;
+    font-size: 25px;
+}
+
 .services-list div a {
     color: #000;
     font-size: 12px;
@@ -401,13 +406,18 @@ img {
 /* section skills */
 
 .skills .container {
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (max-width: 1240px) {
+        justify-content: center;
+    }
 }
 
 .container1{
-    /* width: 600px; */
-    /* height: 500px; */
+    width: 600px;
 }
 
 .heading1 {
